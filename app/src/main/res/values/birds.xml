@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="birds_array">
+        <item>Eagle</item>
+        <item>Puffin</item>
+        <item>Zebra Finch</item>
+        <item>Penguin</item>
+        <item>Flamingo</item>
+        <item>Emu</item>
+        <item>Kiwi</item>
+        <item>Duck</item>
+        <item>Goose</item>
+        <item>Chicken</item>
+        <item>Seagull</item>
+        <item>Parrot</item>
+        <item>Cockatiel</item>
+        <item>Pigeon</item>
+        <item>Owl</item>
+        <item>Budgerigar</item>
+        <item>Toucan</item>
+        <item>Woodpecker</item>
+        <item>Hummingbird</item>
+        <item>Blue Jay</item>
+    </string-array>
+</resources>
+
