@@ -1,9 +1,13 @@
 package com.example.birdcounter;
 
+/*
+ * This bird object stores the name, count, and picture for each bird so that they can be accessed in
+ * the main activity
+ */
 public class Bird {
-    String name;
-    String count;
-    String picture;
+    private String name;
+    private String count;
+    private String picture;
 
     Bird(String name, String picture) {
         this.name = name;

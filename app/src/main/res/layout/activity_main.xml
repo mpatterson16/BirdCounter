@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="416dp"
-        android:layout_height="1029dp"
-        android:fillViewport="true"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,57 +22,62 @@
                 android:id="@+id/birdImage"
                 android:layout_width="338dp"
                 android:layout_height="262dp"
-                android:layout_column="1"
                 android:layout_marginTop="52dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/screamingeagle" />
 
             <Button
-                android:id="@+id/eaglePlusButton"
+                android:id="@+id/plusButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:text="+"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/eagleNumber"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/birdNumber"
                 app:layout_constraintTop_toBottomOf="@+id/birdImage" />
 
             <Button
-                android:id="@+id/eagleMinusButton"
+                android:id="@+id/minusButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_marginTop="28dp"
                 android:width="0px"
                 android:text="-"
-                app:layout_constraintEnd_toStartOf="@+id/eagleNumber"
-                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintEnd_toStartOf="@+id/birdNumber"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/birdImage" />
 
             <TextView
-                android:id="@+id/eagleNumber"
+                android:id="@+id/birdNumber"
                 android:layout_width="53dp"
                 android:layout_height="37dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="36dp"
                 android:text="0"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                app:layout_constraintHorizontal_bias="0.579"
+                app:layout_constraintStart_toEndOf="@+id/minusButton"
                 app:layout_constraintTop_toBottomOf="@+id/birdImage" />
 
             <Spinner
                 android:id="@+id/birdSpinner"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
+                android:layout_width="185dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="32dp"
                 android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/eagleNumber" />
+                app:layout_constraintTop_toBottomOf="@+id/birdNumber" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
